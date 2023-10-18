@@ -5,7 +5,8 @@ import { selectAllCampsites } from './campsitesSlice'
 
 
 const CampsitesList = ({ setCampsiteId }) => {
-  const campsites = selectAllCampsites();
+  const campsites = [];
+  selectAllCampsites();
   return (
     <Row className = 'ms-auto'>
       {campsites.map((campsite) => {
@@ -14,7 +15,8 @@ const CampsitesList = ({ setCampsiteId }) => {
           md='5' 
           classname = 'm-4' 
           key = {campsite.id}
-          onClick= {() => setCampsiteId(campsite.id)}>
+          onClick= {() => setCampsiteId(campsite.id)}
+          >
             <CampsiteCard campsite={campsite} />
           </Col>
         );
