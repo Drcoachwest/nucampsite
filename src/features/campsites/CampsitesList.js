@@ -5,8 +5,7 @@ import { selectAllCampsites } from './campsitesSlice'
 
 
 const CampsitesList = ({ setCampsiteId }) => {
-  const campsites = [];
-  selectAllCampsites();
+  const campsites = selectAllCampsites();
   return (
     <Row className = 'ms-auto'>
       {campsites.map((campsite) => {
