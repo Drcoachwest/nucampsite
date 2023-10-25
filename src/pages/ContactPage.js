@@ -1,6 +1,7 @@
 
 import { Container, Row, Col } from 'reactstrap';
 import SubHeader from '../components/SubHeader';
+import ContactForm from '../components/ContactForm';
 
 
 
@@ -49,7 +50,7 @@ const ContactPage = () => {
 
                 </Col>
                 <Col md='10'>
-                  TBD: ContactForm
+                  <ContactForm />
 
                 </Col>
 
