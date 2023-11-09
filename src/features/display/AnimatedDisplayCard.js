@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
 
 const AnimatedDisplayCard = ({ item }) => {
+  console.log("item in animatedDisplay", item);
   const { image, name, description } = item;
   const [toggle, setToggle] = useState(false);
 
